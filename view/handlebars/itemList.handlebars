@@ -1,0 +1,17 @@
+<ul id="feeds">
+    {{#each .}}
+        <li class="item" data-id="{{id}}" data-date="{{date}}">
+            <header class="header">
+                <h2 class="item-title">
+                    <a href="{{link}}" target="_blank" class="item-link">
+                        {{title}} ({{feedTitle}})
+                    </a>
+                </h2>
+                <time class="item-date">{{dateFormatted}}</time>
+            </header>
+            <article class="item-content">
+                {{{content}}
+            </article>
+        </li>
+    {{/each}}
+</ul>

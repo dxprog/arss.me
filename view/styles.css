@@ -1,0 +1,12 @@
+* { margin:0; padding:0; }
+ul { list-style:none; }
+
+#feeds { padding:20px; }
+.item { padding:20px; margin:40px 0; border:1px solid #eee; box-shadow:0 0 5px #ccc; }
+.item.reading { border-color:#5ee0cb; box-shadow:0 0 10px #5ee0cb; }
+.item-title { font:bold 24px sans-serif; }
+.item-link { color:#222; text-decoration:none; }
+.item-date { color:#ccc; font:14px sans-serif; } 
+.item-content { font:16px/1.3 Georgia, serif; }
+.item-content ul, .item-content ol { padding-left:45px; margin:10px 0; }
+.item-content p { margin:10px 0; }
