@@ -1,6 +1,6 @@
 <ul id="feeds">
     {{#each .}}
-        <li class="item" data-id="{{id}}" data-date="{{date}}">
+        <li class="item{{#if hidden}} hidden{{/if}}" data-id="{{id}}" data-date="{{date}}">
             <header class="header">
                 <h2 class="item-title">
                     <a href="{{link}}" target="_blank" class="item-link">

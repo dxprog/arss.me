@@ -28,6 +28,10 @@ if ($user) {
     usort($items, function($a, $b) {
         return $a->date < $b->date ? -1 : 1;
     });
+
+    for ($i = 0, $count = count($items); $i < $count; $i++) {
+        $items[$i]->content = preg_replace('/\<!--(.*?)--\>/i', '', $items[$i]->content);
+    }
     
     Lib\Display::setTemplate('default');
     Lib\Display::setVariable('feeds', json_encode($feeds));
